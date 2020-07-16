@@ -4,6 +4,12 @@ import { Icon } from "@blueprintjs/core";
 
 import '../css/scss/components/_notification-icon.scss';
 
+/*
+
+    naziv ovog tipa komponente je Badge, da, Blueprint je nema, ali evo primera: https://ant.design/components/badge/#header
+
+*/
+
 
 const NotificationIcon = (props) => {
 

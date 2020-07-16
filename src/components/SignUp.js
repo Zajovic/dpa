@@ -84,6 +84,8 @@ const FormikSignUp = withFormik({
     handleSubmit(values, { setErrors, setSubmitting, resetForm }) {
         setTimeout(() => {
             console.log(values.firstName, values.surName, values.email, values.password, values.gender, values.image);
+            // console.log prikazuje referencu podatka, sto moze nekada da zbuni, ako su se podaci promenili u medjuvremenu od kad su logovani i onda ti pokazuje tu najnoviju verziju, umesto u trenutku kada je log-ovano.
+            // vrlo nifty stvar, koju ja makar cesto koristim je npr: console.log(JSON.stringify(values, null, 4))
             resetForm();
             setSubmitting(false);
         }, 2000);

@@ -4,3 +4,16 @@
     padding: 0;
 }
 
+/*
+
+    nesto je lose organizovano sa css/scss folderima i to, jer nisu samo .scss fajlovi u Github repo-u, nego celokupni folderi, sto je pogresno.
+
+    anyhow, ne znam otkud .sass-cache i ostalo, imao je i zaostali webpack.
+
+    posto koristi create react-app, onda je sve to vec automatski obavljeno. mozes da pises samo .scss fajlove, i da ih uvodis u React kod sa
+        import '../path/to/my/scss/style.scss'
+    kao sto vec i radis, i sve ce to biti ok.
+
+    webpack config ce se pojaviti ako 'eject'-ujes react-scripts, sto ne preporucuje. ':D
+
+*/

@@ -24,8 +24,38 @@ main {
             }
             .search-bar_box {
                 flex: 3;
+                /*
+
+                generalno ja koristim 'grid' umesto 'flex' jako jako cesto
+                sa grid, kontejner div moze da kontrolise velicinu dece, dok sa flex mora svaki child da specificira za sebe.
+
+                ako je npr struktura:
+
+                #wrapper
+                    #main
+                    #sidebar
+
+                sa flex bi morao:
+
+                    #wrapper { display: flex; }
+                    #main { flex: 3; margin-right: 20px; }
+                    #sidebar { flex: 2; }
+
+                dok sa grid je mnogo cistije (na jednom mestu i lako se prilagodi), i razmaci mogu biti kontrolisani lepo, bez margina:
+
+                    #wrapper {
+                        display: flex;
+                        grid-template-columns: 3fr 2fr;
+                        grid-column-gap: 20px;
+                    }
+
+                neki moj rule of thumb je:
+                    - ako mi treba neki grid-like layout - kolone ili redovi, uvek idem sa 'grid'
+                    - ako mi treba da neki meni nepoznati skroz broj div-ova se prati kao u igrici Snake horizontalno ili vertikalno - onda 'flex'. primer su Tagovi npr (https://codesandbox.io/s/e189u) jer za njih je samo bitno da se nadovezuju/prate jedan za drugim, a nije bitan striktna struktura neka u njihovom layoutu dodatno.
+
+                 */
             }
-            
+
         }
         .nav_second-row {
             display: flex;
@@ -45,5 +75,5 @@ main {
                 }
             }
         }
-    }    
+    }
 }
