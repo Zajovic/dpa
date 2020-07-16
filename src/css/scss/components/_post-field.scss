@@ -1,0 +1,16 @@
+.post-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .post-field {
+        width: 80%;
+        height: 100px;
+        margin-bottom: 10px;
+        resize: none;
+        background-color: rgb(208, 208, 255);
+        padding: auto 4px;
+        font-size: 0.9rem;
+        color: rgb(77, 77, 77);
+    }
+}

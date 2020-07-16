@@ -1,0 +1,18 @@
+.post-info {
+    display: flex;
+    flex-direction: row;
+    .post-img {
+        padding: 3px 0 3px 3px;
+    }
+    .post-author {
+        color: rgb(97, 96, 96);
+        font-size: 0.85rem;
+        padding-left: 2px;
+        text-align: right;
+    }
+    .post-time {
+        color: rgb(97, 96, 96);
+        font-size: 0.7rem;
+        text-align: right;
+    }
+}
